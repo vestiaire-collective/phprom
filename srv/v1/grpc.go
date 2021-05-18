@@ -1,10 +1,11 @@
 package v1
 
 import (
-	phprom_v1 "github.com/chaseisabelle/phprom/pkg/v1"
-	v1 "github.com/chaseisabelle/phprom/src/v1"
-	"google.golang.org/grpc"
 	"net"
+
+	phprom_v1 "github.com/vestiaire-collective/phprom/pkg/v1"
+	v1 "github.com/vestiaire-collective/phprom/src/v1"
+	"google.golang.org/grpc"
 )
 
 type GRPCServer struct {

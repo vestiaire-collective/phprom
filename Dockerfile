@@ -1,8 +1,8 @@
 FROM golang:latest AS phprom
 
-COPY ./ /go/src/github.com/chaseisabelle/phprom
+COPY ./ /go/src/github.com/vestiaire-collective/phprom
 
-WORKDIR /go/src/github.com/chaseisabelle/phprom/cmd/v1
+WORKDIR /go/src/github.com/vestiaire-collective/phprom/cmd/v1
 
 RUN go get -v && go build -o /phprom && rm -rf /go
 

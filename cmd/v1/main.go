@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/chaseisabelle/phprom/srv/v1"
+	"github.com/vestiaire-collective/phprom/srv/v1"
 	"log"
 )
 
