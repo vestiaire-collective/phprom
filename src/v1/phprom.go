@@ -4,31 +4,32 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	phprom_v1 "github.com/chaseisabelle/phprom/pkg/v1"
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/common/expfmt"
 	"sync"
 	"time"
+
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/common/expfmt"
+	phprom_v1 "github.com/vestiaire-collective/phprom/pkg/v1"
 )
 
 type PHProm struct{}
 
-type Counters struct{
+type Counters struct {
 	sync.RWMutex
 	vecs map[string]*prometheus.CounterVec
 }
 
-type Histograms struct{
+type Histograms struct {
 	sync.RWMutex
 	vecs map[string]*prometheus.HistogramVec
 }
 
-type Summaries struct{
+type Summaries struct {
 	sync.RWMutex
 	vecs map[string]*prometheus.SummaryVec
 }
 
-type Gauges struct{
+type Gauges struct {
 	sync.RWMutex
 	vecs map[string]*prometheus.GaugeVec
 }

@@ -4,10 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	phprom_v1 "github.com/chaseisabelle/phprom/pkg/v1"
-	v1 "github.com/chaseisabelle/phprom/src/v1"
-	"github.com/prometheus/common/log"
 	"net/http"
+
+	"github.com/prometheus/common/log"
+	phprom_v1 "github.com/vestiaire-collective/phprom/pkg/v1"
+	v1 "github.com/vestiaire-collective/phprom/src/v1"
 )
 
 type RESTServer struct {

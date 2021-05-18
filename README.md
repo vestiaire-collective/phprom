@@ -3,17 +3,17 @@ a prometheus metric datastore for php apps
 
 ---
 ### example
-see a fully functional example [here](https://github.com/chaseisabelle/phprom-example)
+see a fully functional example [here](https://github.com/vestiaire-collective/phprom-example)
 
 ---
 ### prerequisites
-- install the [client](https://github.com/chaseisabelle/phprom-client)
-    - `composer require chaseisabelle/phprom-client`
+- install the [client](https://github.com/vestiaire-collective/phprom-client)
+    - `composer require vestiaire-collective/phprom-client`
 
 ---
 ### usage
 - from command line: `go run cmd/v1/main.go --address=0.0.0.0:3333 --api=grpc`
-- get the latest image from [docker](https://hub.docker.com/repository/docker/chaseisabelle/phprom)
+- get the latest image from [docker](https://hub.docker.com/repository/docker/vestiaire-collective/phprom)
     - `docker run phprom ./phprom --address=0.0.0.0:3333`
 
 ##### cli options
